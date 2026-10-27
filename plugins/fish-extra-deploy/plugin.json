@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "manifest": 2,
+  "id": "fish-extra-deploy",
+  "name": {
+    "zh": "作弊：部署上限 +2",
+    "en": "Cheat: Deployment Limit +2"
+  },
+  "description": {
+    "zh": "所有博士的部署上限 +2。",
+    "en": "Every Doctor's Deployment Limit +2."
+  },
+  "version": "0.1.0",
+  "app": ">=0.3.3 <0.4.0",
+  "api": 1,
+  "class": "content",
+  "scope": [
+    "room"
+  ],
+  "sourceLang": "zh",
+  "authors": [
+    "Fish Edition (evenifyouforget)"
+  ],
+  "homepage": "https://github.com/evenifyouforget/spa-fish-edition-plugins",
+  "permissions": [
+    "data.patch"
+  ],
+  "data": [
+    "data/deploy.json"
+  ]
+}

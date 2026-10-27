@@ -1,0 +1,5 @@
+# the game checkout the plugins are built against (tools/game.mjs)
+.game/
+# packed zips (tools/ci.mjs)
+dist/
+node_modules/

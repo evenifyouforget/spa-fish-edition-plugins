@@ -1,0 +1,19 @@
+{
+  "dsl": 1,
+  "pluginId": "fish-extra-funds",
+  "meta": {
+    "key": "effect:fish-extra-funds:income",
+    "on": [
+      {
+        "when": "income",
+        "do": [
+          {
+            "funds": {
+              "amount": 2
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

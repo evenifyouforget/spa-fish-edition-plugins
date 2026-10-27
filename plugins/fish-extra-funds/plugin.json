@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "manifest": 2,
+  "id": "fish-extra-funds",
+  "name": {
+    "zh": "作弊：每回合资金 +2",
+    "en": "Cheat: Funds +2 every round"
+  },
+  "description": {
+    "zh": "所有博士每回合开始时额外获得 2 资金。",
+    "en": "Every Doctor gains 2 extra Funds at the start of every round."
+  },
+  "version": "0.1.0",
+  "app": ">=0.3.3 <0.4.0",
+  "api": 1,
+  "class": "content",
+  "scope": [
+    "room"
+  ],
+  "sourceLang": "zh",
+  "authors": [
+    "Fish Edition (evenifyouforget)"
+  ],
+  "homepage": "https://github.com/evenifyouforget/spa-fish-edition-plugins",
+  "permissions": [
+    "dsl"
+  ],
+  "dsl": [
+    "dsl/income.json"
+  ]
+}

@@ -1,0 +1,22 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  plugins:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # clones the game at GAME_VERSION into .game/, then: generated files current, check --strict, tests, pack
+      - run: node tools/ci.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: plugins
+          path: dist/

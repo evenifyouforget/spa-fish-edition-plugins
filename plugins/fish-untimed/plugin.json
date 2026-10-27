@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "manifest": 2,
+  "id": "fish-untimed",
+  "name": {
+    "zh": "作弊：休整期不限时",
+    "en": "Cheat: No time limit on the Rest Phase"
+  },
+  "description": {
+    "zh": "休整期没有倒计时，所有博士准备就绪后进入作战（作战仍有时间限制）。",
+    "en": "The Rest Phase has no countdown: the battle starts once every Doctor is ready (battles keep their time limit)."
+  },
+  "version": "0.1.0",
+  "app": ">=0.3.3 <0.4.0",
+  "api": 1,
+  "class": "content",
+  "scope": [
+    "room"
+  ],
+  "sourceLang": "zh",
+  "authors": [
+    "Fish Edition (evenifyouforget)"
+  ],
+  "homepage": "https://github.com/evenifyouforget/spa-fish-edition-plugins",
+  "permissions": [
+    "data.patch"
+  ],
+  "data": [
+    "data/prep.json"
+  ]
+}

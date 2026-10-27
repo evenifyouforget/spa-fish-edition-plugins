@@ -1,0 +1,23 @@
+name: release
+
+# Push a tag (e.g. v0.1.0) to publish every plugin's zip and SHA256SUMS as a GitHub release.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/ci.mjs
+      - run: gh release create "$GITHUB_REF_NAME" dist/* --title "$GITHUB_REF_NAME" --notes-file dist/SHA256SUMS
+        env:
+          GH_TOKEN: ${{ github.token }}

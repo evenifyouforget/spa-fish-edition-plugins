@@ -1,0 +1,14 @@
+{
+  "patch": 1,
+  "ops": [
+    {
+      "op": "set",
+      "file": "config",
+      "path": [
+        "economy",
+        "deployCap"
+      ],
+      "value": 10
+    }
+  ]
+}

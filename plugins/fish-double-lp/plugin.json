@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "manifest": 2,
+  "id": "fish-double-lp",
+  "name": {
+    "zh": "作弊：初始目标生命翻倍",
+    "en": "Cheat: Double starting LP"
+  },
+  "description": {
+    "zh": "所有博士的初始目标生命翻倍（每个策略的初始生命值 ×2）。",
+    "en": "Every Doctor's starting LP is doubled (each Strategy's starting LP × 2)."
+  },
+  "version": "0.1.0",
+  "app": ">=0.3.3 <0.4.0",
+  "api": 1,
+  "class": "content",
+  "scope": [
+    "room"
+  ],
+  "sourceLang": "zh",
+  "authors": [
+    "Fish Edition (evenifyouforget)"
+  ],
+  "homepage": "https://github.com/evenifyouforget/spa-fish-edition-plugins",
+  "permissions": [
+    "data.patch"
+  ],
+  "data": [
+    "data/lp.json"
+  ]
+}
